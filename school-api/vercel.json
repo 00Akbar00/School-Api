@@ -1,20 +1,19 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "app.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/(.*)",
-        "dest": "/api/$1"
-      }
-    ],
-    "env": {
-      "MONGO_URI": "mongodb+srv://akbar:123123123@cluster0.s0dn9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-      "PORT": "8081"
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.js",
+      "use": "@vercel/node"
     }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
+  ],
+  "env": {
+    "MONGO_URI": "mongodb+srv://akbar:123123123@cluster0.s0dn9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+    "PORT": "8081"
   }
-  
+}
